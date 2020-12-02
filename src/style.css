@@ -1,0 +1,103 @@
+body{
+    font-family: sans-serif;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header{
+    background-color: whitesmoke;
+
+}
+.barra-superior{
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+}
+.titulo-principal, .contenedor-menu{
+    width: 50%;
+}
+
+
+.menu-principal{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.menu-principal__item>a{
+    text-decoration: none;
+}
+.menu-principal__item>a:hover{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__titulo{
+    position: absolute;
+    color: whitesmoke;
+    font-size: xx-large;
+}
+
+
+
+
+
+
+.servicios{
+    background-color: honeydew;
+    
+   
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+    padding-top:10px;
+}
+
+
+.servicios_contenedor{
+    
+}
+
+
+
+
+
+.noticias{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.miembros{
+    background-color: lightgray;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.footer{
+    background-color:lightgray;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.contacto{
+    text-align: right;
+}
+
+

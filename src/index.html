@@ -4,250 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera pagina web</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body >
 
-    <style>
-        .cabecera{
-            
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align:center;
-        }
-        .botones{
-            background-color: #C2CCD2;
-            display:flex;
-            justify-content: space-between;
-            width: 20%;
-            float: right;
-            height: 100px;
-            align-items: center;
-            
-        }
 
-        .services{
-            display:flex;
-            justify-content: space-between;
-   
-            
-        }
-
-        .servicio{
-            width: 30%;
-            text-align: center;
-            margin: black 1%;
-
-            
-        }
-        .team{
-            text-align: center;
-  
-            
-            padding: 0 px;
-            
-        }
-        .Nombre{
-            margin: 0%;
-
-        }
-
-        .tituloseccion{
-            background-color:steelblue;
-            text-align: center;     
-            margin: 0px;
-            padding: 0 px;
-            border: 0 px;
-        }
-        .pie{
-            display:flex;
-            justify-content: space-between;
-            margin-top: black 5px solid ;
-            
-        }
-        .informacion{
-            width: 50%;
-            margin: 0px;
-            padding: 0 px;
-            border: 0 px;
-            
-        }
-        
-        .contacto{
-            width: 50%;
-            margin: 0px;
-            padding: 0 px;
-            border: 0 px;
-            float: right;
-            text-align: right;
-
-     
-        }
-    </style>
-    <header>
-        <div class=cabecera>
-            <div>
-                <h1>RETO 1</h1>
+    <header class="header">
+       
+        <!-- menu -->
+        <section class="barra-superior">
+            <div class="titulo-principal">
+                <h1>    Reto 1</h1>
             </div>
+            <nav class="contenedor-menu">
+                <ul class="menu-principal">
+                    <li class="menu-principal__item"><a href="#">Inicio</a></li>
+                    <li class="menu-principal__item"><a href="#services">Servicios</a></li>
+                    <li class="menu-principal__item"><a href="#news">Noticias</a></li>
+                    <li class="menu-principal__item"><a href="#team">Miembros</a></li>
+                </ul>
 
-            <nav class=botones>
-                <div>
-                    <a href="#">Inicio</a>
-                </div>
-                <div>
-                    <a href="#">Promociones</a>
-                </div>
-                <div>
-                    <a href="#">Actualidad</a>
-                </div>
-                
-      
             </nav>
-        
+        </section>
 
-        </div>
+        <!-- botones -->
+        <section class="banner">
+            <h2 class="banner__titulo">Bienvenido a nuestra página</h2>
+            <img class="banner__imagen"  width= 1200 px;
+            height= 600 px
+            src="socialismo.jpg" alt="Imagen banner">
+        </section>
+
         
     </header>
     <main>
-
-
-        <p class="tituloseccion">Sección de noticias</p>
-
-        <div id="news">
-
-            <!--primer bloque-->
-            <div class=services>
+        <!-- servicios -->
+        <section id="services" class="servicios">
+            <div class="servicios_contenedor">
                 
-                <div class=servicio>
-                    <img 
-                    width="300" height="300"
-                    src="noticia1.webp"
-                    >
-                    <div>
-                    <p >
-                        Murió bebé que nació prematuro y había sido enviado por error a una morgue <br>
-                        <a href="#">Click para ver la noticia completa</a>
-                        
-                    </p>
-    
-                    </div>
-                </div>
-                <div class=servicio>
-                    <img 
-                    width="300" height="300"
-                    src="noticia2.webp"
-                    >
-                    <div>
-                    <p >
-                        Prendió un cigarrillo en un ascensor y por poco termina en Mil maneras de morir <br>
-                        <a href="#">Click para ver la noticia completa</a>
-                        
-                    </p>
-    
-                    </div>
-                </div>
-                
-                
-            </div>
-            <!--segundo bloque-->
-            <div class=services>
-                
-                <div class=servicio>
-                    <img 
-                    width="300" height="300"
-                    src="noticia3.webp"
-                    >
-                    <div>
-                    <p >
-                        Suspenden a jueces que archivaron caso por violación porque la víctima usaba ropa interior roja <br>
-                        <a href="#">Click para ver la noticia completa</a>
-                        
-                    </p>
-    
-                    </div>
-                </div>
-                
-                <div class=servicio>
-                    <img 
-                    width="300" height="300"
-                    src="noticia4.webp"
-                    >
-                    <div>
-                    <p >
-                        Intentaron por décadas concebir una niña y después de 14 hijos lo lograron <br>
-                        <a href="#">Click para ver la noticia completa</a>
-                        
-                    </p>
-    
-                    </div>
-                </div>
-                
-                
-            </div>
-        </div>
-
-
-
-        <p class="tituloseccion">Sección de servicios</p>
-
-        <div class=services id="services">
-            <div class=servicio>
-                <div><h3 class=Nombre>Ondeamos sus banderas</h3></div>
                 <img 
                 width="200" height="300"
                 src="servicio1.jpg"
                 >
-                <div>
                 <p >
                     Contamos con los mejores ondeadores de banderas de la galaxia, disponible las 24 horas <br>
                     <a href="#">Reserva ya</a>
                     
                 </p>
-
-                </div>
             </div>
-            <div class=servicio>
-                <div><h3 class=Nombre >Salvamos la vida a muchos peluches</h3></div>
+            <div class="servicios_contenedor">
                 <img 
                 width="200" height="300"
                 src="servicio2.jpg"
                 >
-                <div>
+                
                 <p >
                     Por un modico precio de 3 mil millones de bolivares, y junto a los mejores cirujanos de peluches de afganistan podremos salvarlos a todos <br>
                     <a href="#">Pide tu cirujano</a>
                     
                 </p>
 
-                </div>
             </div>
-            <div class=servicio>
-                <div><h3 class=Nombre >Olemos por usted</h3></div>
+            <div class="servicios_contenedor">
                 <img 
                 width="200" height="300"
                 src="servicio3.jpg"
                 >
-                <div>
+                
                 <p >
                     ¿no quiere exponerse a su novia con mal aliento?, tranquilo, nosotros la olemos por usted para asegurarnos que esté en su mejor condicion <br>
                     <a href="#">Reserva ya</a>
                     
                 </p>
+            </div>
+        </section>
+        <!-- fin servicios -->
+        
 
-                </div>
+        <!-- Noticias -->
+        <section id="news" class="noticias">
+            <!-- bloque 1 -->
+            <div class="bloque1">
+            <div>
+                <img 
+                width="300" height="200"
+                src="noticia1.webp"
+                >
+                
+                <p >
+                    Murió bebé que nació prematuro y había sido enviado por error a una morgue <br>
+                    <a href="#">Click para ver la noticia completa</a>
+                    
+                </p>
+            </div>
+            <div>
+                <img 
+                    width="300" height="200"
+                    src="noticia2.webp"
+                    >
+                   
+                    <p >
+                        Prendió un cigarrillo en un ascensor y por poco termina en Mil maneras de morir <br>
+                        <a href="#">Click para ver la noticia completa</a>
+                        
+                    </p>
+            </div>
             </div>
 
-        </div>
-
-        <p class="tituloseccion">Sección de equipo</p>
-        <div class=team id="team">
-            <div><h3 class=Nombre >Miguel Angel Mestra Peña</h3></div>
-            <img 
-            src="foto.png"
-            >
+            <!-- bloque 2 -->
+            <div class="bloque2">
             <div>
+                <img 
+                    width="300" height="200"
+                    src="noticia3.webp"
+                    >
+                <div>
+                  
+                    <p >
+                        Suspenden a jueces que archivaron caso por violación porque la víctima usaba ropa interior roja <br>
+                        <a href="#">Click para ver la noticia completa</a>
+                        
+                    </p>
+               
+                </div>   
+            </div>
+            <div>
+                <img 
+                    width="300" height="200"
+                    src="noticia4.webp"
+                    >
+                    
+                    <p >
+                        Intentaron por décadas concebir una niña y después de 14 hijos lo lograron <br>
+                        <a href="#">Click para ver la noticia completa</a>
+                        
+                    </p>
+            </div>
+        
+        </section>
+        <!-- fin noticas -->
+
+        <!-- seccion equipo -->
+        <section id="team" class="miembros">
+            <div>
+                <img 
+                src="foto.png"
+                >
+                <div><h2 class=Nombre >Miguel Angel Mestra Peña</h2></div>
+            
                 <p >
                     Edad: 21 <br>
                     Universidad: Universidad Nacional de Colombia<br>
@@ -255,14 +160,14 @@
                     
                 </p>
             </div>
-        
-        </div>
+        </section>
+        <!-- fin seccion equipo -->
 
 
-        <p class="tituloseccion">Section footer</p>
-    </main>
-    <footer class=pie>
-        <div class=informacion>
+
+    <!-- pie de pagina -->
+    <footer class="footer">
+        <div class="informaciion">
             <p>
                 Pagina creada con fines didacticos <br>
                 <a href="https://github.com/MiguelMestra/Reto1.git"> Repositorio </a> <br>
@@ -270,15 +175,17 @@
 
             </p>
         </div>
-        <div  class=contacto >
+        <div class="contacto">
 
             <p >Miguel Angel Mestra Peña <br>
             3147625461 <br>
             mamestrap@unal.edu.co
             </p>
         </div>
-        
     </footer>
+
+        
+   
 
 </body>
 </html>
